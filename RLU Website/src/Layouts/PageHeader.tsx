@@ -1,7 +1,10 @@
 import { Facebook, Instagram, Twitter } from "lucide-react";
 import { Button } from "../components/Button";
 import logo from "../assets/RLUimgno3br.jpg";
-import { Sidebar, SidebarItem } from "./Sidebar";
+
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Home from "../pages/Home";
+import About from "../pages/About";
 
 export function PageHeader() {
 

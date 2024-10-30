@@ -1,5 +1,4 @@
 
-import React from 'react';
 
 type TitleProps = {
   text1: string;
