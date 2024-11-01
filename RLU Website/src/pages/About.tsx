@@ -1,9 +1,11 @@
-import { Test } from "../components/test";
+import { PageHeader } from "../Layouts/PageHeader";
 
 export default function About() {
   return (
+    
     <div>
-      <Test />
+        <h1>Welcome to about page</h1>
     </div>
+      
   );
 }

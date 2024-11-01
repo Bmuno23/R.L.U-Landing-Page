@@ -1,5 +1,7 @@
-import { div } from "framer-motion/client";
-
-export function Test(){
-    return <div>test</div>
+export default function Test() {
+    return (
+        <div>
+            This is a test component.
+        </div>
+    )
 }

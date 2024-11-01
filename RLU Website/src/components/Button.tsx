@@ -14,15 +14,16 @@ export const buttonStyles = cva(["transition-colors"],{
         size:{
             icon:["py-2.5", "px-2", "me-2" ,"text-sm", "font-medium"],
             button:["py-2.5", "px-5", "me-2" ,"text-sm", "font-medium"],
-        }
+        },
     }, 
 })
+
+
 
 
 type ButtonProps = VariantProps<typeof buttonStyles> & ComponentProps<"button">
 
 export function Button({variant, size, className, ...props}: ButtonProps){
     return <button {...props} className={twMerge(buttonStyles({variant, size}), className)}>
-
     </button> 
 }

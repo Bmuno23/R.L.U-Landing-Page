@@ -39,21 +39,22 @@ export function Sidebar({ children }: { children: ReactNode }) {
 }
 
 interface SidebarItemProps {
-  icon?: ReactNode;
+  place?: string;
   text: string;
   alert?: boolean;
   active?: boolean;
   expanded?: boolean;
 }
 
-export function SidebarItem({ icon, text, active, alert }: SidebarItemProps) {
+export function SidebarItem({ place, text, active, alert }: SidebarItemProps) {
   const context = useContext(SidebarContext);
   if (!context) {
     throw new Error("SidebarItem must be used within a Sidebar");
   }
+
   const { expanded } = context;
-  return (
-    <li
+  return(
+  <li
       className={`relative flex items-center py-2 px-2 my-1 font-medium rounded-md cursor-pointer transition-colors ${
         active
           ? "bg-gradient-to-tr from-indigo-200 to-indigo-100 text-indigo-800"
